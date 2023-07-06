@@ -1,0 +1,52 @@
+Verilen [16, 21, 11, 8, 12, 22] dizisini Merge Sort (Birleştirme Sıralaması) algoritması kullanarak sıralayalım. Merge Sort algoritması, sıralanacak diziyi bölerek küçük alt dizilere ayırır, ardından bu alt dizileri birleştirerek sıralamayı gerçekleştirir. İşte adım adım sıralama işlemi:
+
+Adım 1: [16, 21, 11, 8, 12, 22]
+Diziyi ikiye böleriz:
+Sol alt dizi: [16, 21, 11]
+Sağ alt dizi: [8, 12, 22]
+
+Adım 2: Sol Alt Dizi: [16, 21, 11]
+Bu alt diziyi tekrar ikiye böleriz:
+Sol alt dizi: [16]
+Sağ alt dizi: [21, 11]
+
+Adım 3: Sağ Alt Dizi: [21, 11]
+Bu alt diziyi tekrar ikiye böleriz:
+Sol alt dizi: [21]
+Sağ alt dizi: [11]
+
+Adım 4: Sol Alt Dizi: [21], Sağ Alt Dizi: [11]
+Bu iki alt diziyi birleştirerek sıralarız:
+Birleştirilmiş alt dizi: [11, 21]
+
+Adım 5: Sol Alt Dizi: [16], Sağ Alt Dizi: [11, 21]
+Bu iki alt diziyi birleştirerek sıralarız:
+Birleştirilmiş alt dizi: [11, 16, 21]
+
+Adım 6: Sağ Alt Dizi: [8, 12, 22]
+Bu alt diziyi tekrar ikiye böleriz:
+Sol alt dizi: [8]
+Sağ alt dizi: [12, 22]
+
+Adım 7: Sol Alt Dizi: [12, 22]
+Bu alt diziyi tekrar ikiye böleriz:
+Sol alt dizi: [12]
+Sağ alt dizi: [22]
+
+Adım 8: Sol Alt Dizi: [12], Sağ Alt Dizi: [22]
+Bu iki alt diziyi birleştirerek sıralarız:
+Birleştirilmiş alt dizi: [12, 22]
+
+Adım 9: Sol Alt Dizi: [8], Sağ Alt Dizi: [12, 22]
+Bu iki alt diziyi birleştirerek sıralarız:
+Birleştirilmiş alt dizi: [8, 12, 22]
+
+Adım 10: Sol Alt Dizi: [11, 16, 21], Sağ Alt Dizi: [8, 12, 22]
+Bu iki birleştirilmiş alt diziyi birleştirerek sıralarız:
+Birleştirilmiş alt dizi: [8, 11, 12, 16, 21, 22]
+
+Sonuç olarak, [16, 21, 11, 8, 12, 22] dizisi Merge Sort algoritması kullanılarak [8, 11, 12, 16, 21, 22] şeklinde sıralanmış olur.
+
+Çözüm-2:
+
+        Big-O => 2^x=n = logn
