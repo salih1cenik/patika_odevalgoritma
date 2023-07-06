@@ -1,0 +1,59 @@
+
+[22,27,16,2,18,6]
+
+Aşağıdaki anlatımda sort türüne göre aşamalar yapılmış ve Big-O gösterilmiştir.
+
+[1. ve 2. soru cevapları]
+
+
+Adım 1: [22, 27, 16, 2, 18, 6]
+İlk eleman olan 22, zaten sıralı bölgededir.
+
+Adım 2: [22, 27, 16, 2, 18, 6] [n-4 Big O]
+27, sıralı bölgedeki elemandan büyük olduğu için yer değiştirmez.
+
+Adım 3: [16, 22, 27, 2, 18, 6] [n-3 Big O]
+16, sıralı bölgedeki elemanlardan küçük olduğu için doğru konumuna gelene kadar geriye doğru kaydırılır.
+
+Adım 4: [2, 16, 22, 27, 18, 6] [n-2 Big O]
+2, sıralı bölgedeki elemanlardan küçük olduğu için doğru konumuna gelene kadar geriye doğru kaydırılır.
+
+Adım 5: [2, 16, 18, 22, 27, 6] [n-1 Big O]
+18, sıralı bölgedeki elemanlardan küçük olduğu için doğru konumuna gelene kadar geriye doğru kaydırılır.
+
+Adım 6: [2, 6, 16, 18, 22, 27] [1 Big O]
+6, sıralı bölgedeki elemanlardan küçük olduğu için doğru konumuna gelene kadar geriye doğru kaydırılır.
+
+Sonuç olarak, [22, 27, 16, 2, 18, 6] dizisi Insertion Sort algoritması kullanılarak [2, 6, 16, 18, 22, 27] şeklinde sıralanmış olur. Her adımda, sıralı bölgede yerleştirilecek bir eleman bulunur ve bu eleman doğru konumuna kaydırılır.
+
+Insertion Sort algoritmasının en kötü durumda Big O gösterimi O(n^2)'dir, yani dizi uzunluğu n olduğunda en fazla n^2 adımda tamamlanır.
+
+[3.soru ve cevabı]
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+Average case: Aradığımız sayının ortada olması [CEVAP - AVERAGE CASE]
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+
+[4.soru ve cevabı]
+
+Verilen [7, 3, 5, 8, 2, 9, 4, 15, 6] dizisini Selection Sort (Seçmeli Sıralama) algoritmasıyla sıralayalım. İlk dört adımı aşağıda gösteriyorum:
+
+Adım 1: [7, 3, 5, 8, 2, 9, 4, 15, 6]
+En küçük elemanı bulup ilk elemanla yer değiştiriyoruz:
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+Adım 2: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+En küçük elemanı bulup ikinci elemanla yer değiştiriyoruz:
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+Adım 3: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+En küçük elemanı bulup üçüncü elemanla yer değiştiriyoruz:
+[2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+Adım 4: [2, 3, 4, 8, 7, 9, 5, 15, 6]
+En küçük elemanı bulup dördüncü elemanla yer değiştiriyoruz:
+[2, 3, 4, 5, 7, 9, 8, 15, 6]
+
+Bu şekilde, [7, 3, 5, 8, 2, 9, 4, 15, 6] dizisinin Selection Sort algoritması kullanılarak sıralama işlemi ilk dört adımda gerçekleştirilir.
