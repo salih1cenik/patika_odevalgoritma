@@ -1,0 +1,79 @@
+Verilen [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary Search Tree (İkili Arama Ağacı) aşamalarını aşağıda gösteriyorum:
+
+Adım: İlk eleman olan 7, ağacın kök düğümü olur.
+
+7
+1.Adım: Sıradaki eleman 5. 5, 7'nin sol çocuğu olarak eklenir.
+     7
+    /
+   5
+2.Adım: Sıradaki eleman 1. 1, 7'nin sol alt ağacının sol çocuğu olarak eklenir.
+
+     7
+    / \
+   5   1
+3.Adım: Sıradaki eleman 8. 8, 7'nin sağ çocuğu olarak eklenir.
+
+     7
+    / \
+   5   1
+        \
+         8
+4.Adım: Sıradaki eleman 3. 3, 5'in sağ çocuğu olarak eklenir.
+     7
+    / \
+   5   1
+    \   \
+     3   8
+5.Adım: Sıradaki eleman 6. 6, 5'in sağ alt ağacının sol çocuğu olarak eklenir.
+
+     7
+    / \
+   5   1
+    \   \
+     3   8
+      \
+       6
+6.Adım: Sıradaki eleman 0. 0, 1'in sol çocuğu olarak eklenir.
+     7
+    / \
+   5   1
+  /   / \
+ 3   0   8
+  \
+   6
+7.Adım: Sıradaki eleman 9. 9, 8'in sağ çocuğu olarak eklenir.
+     7
+    / \
+   5   1
+  /   / \
+ 3   0   8
+  \     \
+   6     9
+8.Adım: Sıradaki eleman 4. 4, 5'in sol alt ağacının sağ çocuğu olarak eklenir.
+     7
+    / \
+   5   1
+  /   / \
+ 3   0   8
+  \     \
+   6     9
+        /
+       4
+9.Adım: Sıradaki eleman 2. 2, 3'ün sol çocuğu olarak eklenir.
+     7
+    / \
+   5   1
+  /   / \
+ 3   0   8
+  \     \
+   6     9
+  /
+ 2
+Sonuç olarak, [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisi Binary Search Tree'e dönüştürüldü. Bu aşamalarda her eleman, uygun konuma yerleştirildi ve BinarySearch Tree oluşturuldu.
+
+
+
+
+
+
